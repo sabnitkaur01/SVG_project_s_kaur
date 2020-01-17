@@ -8,7 +8,8 @@
   // find the button element on the page by its ID with javaScript
   let theButton = document.querySelector("#myButton"),
       theHeading = document.querySelector('h1'),
-      svgImage = document.querySelector("#svgGraphic");
+      //svgImage = document.querySelector("#svgGraphic"),
+      allSVGs = document.querySelectorAll(".svg");
 
   //this function changes the heading text
   function changeText() {
@@ -21,7 +22,11 @@ function logoSVG() {
 }
 
   theButton.addEventListener("click", changeText);
-  theButton.addEventListener("click", logoSVG);
+  //svgImage.addEventListener("click", logoSVG);
+  //svgImage2.addEventListener("click", logoSVG);
+
+  //loop through the collection and apply our event handling to each element
+  allSVGs.forEach(item => item.addEventListener('click', logoSVG));
   //document.querySelector('h1').textContent = "Hello there from the console";
 
 })();
