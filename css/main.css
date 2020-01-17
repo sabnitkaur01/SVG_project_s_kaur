@@ -1,3 +1,18 @@
 .img-wrapper { display: inline-block; width: 50%; }
 
 .img-wrapper img { width: 100%;}
+
+.black-bg { background-color: black; }
+
+/* change the SVG graphics artwork with CSS */
+
+
+
+#beerGraphic:hover #lGrain_1_ { fill: red; }
+#beerGraphic:hover #rGrain{ fill: red; }
+
+#beerGraphic:hover #rStar:hover { fill: yellow; }
+#beerGraphic:hover #lStar:hover { fill: yellow; }
+
+#beerGraphic:hover #lgrain { fill: red; }
+#beerGraphic:hover #rgrain{ fill: red; }
